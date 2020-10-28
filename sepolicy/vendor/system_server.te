@@ -2,8 +2,6 @@
 allow system_server init:binder call;
 
 # camera
-allow system_server mm-qcamerad:binder { call };
-allow system_server persist_camera_prop:file { getattr read open };
 allow system_server camera_prop:file { getattr read open };
 
 allow system_server sysfs:file { getattr open read };
@@ -36,7 +34,6 @@ allow system_server vendor_file:file { getattr open read };
 
 allow system_server adb_data_file:file { getattr open read };
 allow system_server zygote:process { getpgid };
-allow system_server app_zygote:process { getpgid };
 allow system_server vfat:dir { getattr open read };
 allow system_server shell_prop:property_service { set };
 allow system_server crash_dump:process { getpgid };
@@ -52,7 +49,3 @@ allow system_server adsprpc_prop:file { getattr open read };
 allow system_server apexd_prop:file { getattr open read };
 allow system_server bg_boot_complete_prop:file { getattr open read };
 allow system_server bg_daemon_prop:file { getattr open read };
-allow system_server media_rw_data_file:dir { setattr };
-allow system_server userspace_reboot_exported_prop:file { read };
-
-add_service(system_server, default_android_service);
