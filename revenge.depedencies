@@ -1,0 +1,6 @@
+[
+  {
+    "repository": "platform_external_chromium-webview",
+    "target_path": "external/chromium-webview"
+  }
+]
