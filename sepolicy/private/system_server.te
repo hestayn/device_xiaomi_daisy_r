@@ -1,0 +1,6 @@
+allow system_server userspace_reboot_exported_prop:file { open };
+allow system_server userspace_reboot_exported_prop:file { getattr };
+allow system_server userspace_reboot_config_prop:file { read };
+allow system_server userspace_reboot_config_prop:file { open };
+allow system_server userspace_reboot_config_prop:file { getattr };
+allow system_server s0:process { getpgid };
