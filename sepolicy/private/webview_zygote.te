@@ -1,1 +1,0 @@
-allow webview_zygote unlabeled:file { read };
