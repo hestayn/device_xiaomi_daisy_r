@@ -1,5 +1,0 @@
-allow radio unlabeled:file { read };
-allow radio qcom_ims_prop:file { read };
-allow radio qcom_ims_prop:file { open };
-allow radio qcom_ims_prop:file { getattr };
-allow radio cnd:binder { call };

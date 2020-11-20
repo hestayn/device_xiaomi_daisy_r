@@ -1,3 +1,0 @@
-allow hal_soter_qti vfat:file { read };
-allow hal_soter_qti vfat:file { open };
-allow hal_soter_qti vfat:file { getattr };
