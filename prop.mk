@@ -49,6 +49,10 @@ vendor.voice.record.conc.disabled=false \
 vendor.voice.voip.conc.disabled=true \
 vendor.audio.feature.kpi_optimize.enable=false
 
+# Blur
+ro.sf.blurs_are_expensive=1
+ro.surface_flinger.supports_background_blur=1
+
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
 bluetooth.hfp.client=1 \
