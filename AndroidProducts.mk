@@ -14,4 +14,5 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosip_daisy.mk
+    $(LOCAL_DIR)/evolution_daisy.mk
+

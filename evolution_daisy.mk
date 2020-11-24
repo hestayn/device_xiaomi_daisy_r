@@ -31,11 +31,11 @@ $(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
 $(call inherit-product, device/xiaomi/daisy/device.mk)
 
 # Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := daisy
-PRODUCT_NAME := aosip_daisy
+PRODUCT_NAME := evolution_daisy
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A2 Lite
