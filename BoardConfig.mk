@@ -220,7 +220,6 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
-TARGET_EXCLUDE_QCOM_SEPOLICY := true
 
 # Sepolicy
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
