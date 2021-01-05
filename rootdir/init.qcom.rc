@@ -59,6 +59,9 @@ on early-boot
     write /sys/kernel/boot_cdsp/boot 1
     write /sys/kernel/boot_slpi/boot 1
 
+    # Set right perm for obb folder
+    chmod 0770 /data/media/0/Android/obb
+
     # for backward compatibility
     chown system system /persist/sensors
     chown system system /persist/sensors/registry
